@@ -1,0 +1,29 @@
+<h1>Reply to Post</h1>
+
+<div style="margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #6c757d;">
+    <div style="font-size: 0.9em; color: #666; margin-bottom: 10px;">Replying to:</div>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+        <strong>John Doe</strong>
+        <span style="font-size: 0.8em; color: #666;">2024-01-15 10:30 AM</span>
+    </div>
+    <div>This is the original post content that you are replying to. It contains some interesting information.</div>
+</div>
+
+<form method="POST" action="/posts">
+    <input type="hidden" name="replyToId" value="123">
+
+    <div class="form-group">
+        <label for="posterName">Your Name:</label>
+        <input type="text" id="posterName" name="posterName" maxlength="100" required>
+    </div>
+
+    <div class="form-group">
+        <label for="content">Your Reply:</label>
+        <textarea id="content" name="content" placeholder="Write your reply here..." required></textarea>
+    </div>
+
+    <div>
+        <button type="submit" class="btn">Post Reply</button>
+        <a href="/posts/123" class="btn" style="background-color: #6c757d;">Cancel</a>
+    </div>
+</form>

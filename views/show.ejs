@@ -1,0 +1,61 @@
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+    <h1 style="margin: 0;">Post by <strong>John Doe</strong></h1>
+    <div class="post-meta" style="text-align: right; font-size: 0.9em; color: #666;">
+        Created: 2024-01-15 10:30 AM<br>
+        Updated: 2024-01-15 11:15 AM
+    </div>
+</div>
+
+
+<div style="margin: 20px 0; padding: 20px; background-color: #f9f9f9; border-left: 4px solid #007bff;">
+    This is a detailed post about web development best practices. It covers various topics including performance optimization, security considerations, and modern development workflows. The post provides practical examples and real-world scenarios that developers encounter in their daily work.
+</div>
+
+<div style="margin: 30px 0;">
+    <h3 style="border-bottom: 2px solid #e9ecef; padding-bottom: 10px; margin-bottom: 20px;">Replies (3)</h3>
+    <div style="margin: 15px 0; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #28a745; border-radius: 0 5px 5px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <strong style="color: #28a745;">Jane Smith</strong>
+            <span style="font-size: 0.8em; color: #666;">2024-01-15 11:15 AM</span>
+        </div>
+        <div style="margin-bottom: 10px;">Great insights! I especially agree with your points about performance optimization.</div>
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <a href="/posts/2" class="btn" style="font-size: 0.8em; padding: 5px 10px;">View</a>
+            <a href="/posts/2/reply" class="btn" style="font-size: 0.8em; padding: 5px 10px; background-color: #28a745;">Reply</a>
+        </div>
+    </div>
+    <div style="margin: 15px 0; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #28a745; border-radius: 0 5px 5px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <strong style="color: #28a745;">Bob Wilson</strong>
+            <span style="font-size: 0.8em; color: #666;">2024-01-15 12:00 PM</span>
+        </div>
+        <div style="margin-bottom: 10px;">Thanks for sharing this. Very helpful for my current project.</div>
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <a href="/posts/3" class="btn" style="font-size: 0.8em; padding: 5px 10px;">View</a>
+            <a href="/posts/3/reply" class="btn" style="font-size: 0.8em; padding: 5px 10px; background-color: #28a745;">Reply</a>
+            <span style="font-size: 0.8em; color: #666;">
+                <a href="/posts/3" style="color: #007bff;">1 nested reply</a>
+            </span>
+        </div>
+    </div>
+    <div style="margin: 15px 0; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #28a745; border-radius: 0 5px 5px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <strong style="color: #28a745;">Alice Johnson</strong>
+            <span style="font-size: 0.8em; color: #666;">2024-01-15 1:30 PM</span>
+        </div>
+        <div style="margin-bottom: 10px;">Could you elaborate more on the security considerations you mentioned?</div>
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <a href="/posts/4" class="btn" style="font-size: 0.8em; padding: 5px 10px;">View</a>
+            <a href="/posts/4/reply" class="btn" style="font-size: 0.8em; padding: 5px 10px; background-color: #28a745;">Reply</a>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 30px;">
+    <a href="/posts" class="btn">← Back to Posts</a>
+    <a href="/posts/1/reply" class="btn" style="background-color: #28a745;">Reply to Post</a>
+    <a href="/posts/1/edit" class="btn">Edit Post</a>
+    <form style="display: inline;" method="POST" action="/posts/1/delete" onsubmit="return confirm('Are you sure you want to delete this post?')">
+        <button type="submit" class="btn btn-danger">Delete Post</button>
+    </form>
+</div>

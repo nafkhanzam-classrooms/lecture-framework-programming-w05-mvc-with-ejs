@@ -1,0 +1,55 @@
+<h1>All Posts</h1>
+
+<div class="post">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+        <h3 style="margin: 0;"><strong>John Doe</strong></h3>
+        <span style="font-size: 0.8em; color: #666;">2024-01-15 10:30 AM</span>
+    </div>
+
+    <p style="margin: 10px 0;"><a href="/posts/1" style="color: #333; text-decoration: none;">This is a sample post about web development. It contains interesting insights about modern frameworks.</a></p>
+
+    <div style="margin-top: 15px;">
+        <a href="/posts/1" class="btn" style="font-size: 0.9em;">View</a>
+        <a href="/posts/1/reply" class="btn" style="font-size: 0.9em; background-color: #28a745;">Reply</a>
+        <a href="/posts/1/edit" class="btn" style="font-size: 0.9em;">Edit</a>
+        <form style="display: inline;" method="POST" action="/posts/1/delete" onsubmit="return confirm('Are you sure you want to delete this post?')">
+            <button type="submit" class="btn btn-danger" style="font-size: 0.9em;">Delete</button>
+        </form>
+    </div>
+
+    <div style="margin: 20px 0 0 20px; border-left: 3px solid #e9ecef; padding-left: 15px;">
+        <h4 style="margin: 0 0 15px 0; font-size: 1em; color: #666;">Replies (2):</h4>
+        <div style="margin: 10px 0; padding: 10px; background-color: #f8f9fa; border-radius: 5px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <strong style="font-size: 0.9em;">Jane Smith</strong>
+                <span style="font-size: 0.8em; color: #666;">2024-01-15 11:15 AM</span>
+            </div>
+            <p style="margin: 0; font-size: 0.9em;"><a href="/posts/2" style="color: #333; text-decoration: none;">Great insights! I especially agree with your points about performance.</a></p>
+        </div>
+        <div style="margin: 10px 0; padding: 10px; background-color: #f8f9fa; border-radius: 5px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <strong style="font-size: 0.9em;">Bob Wilson</strong>
+                <span style="font-size: 0.8em; color: #666;">2024-01-15 12:00 PM</span>
+            </div>
+            <p style="margin: 0; font-size: 0.9em;"><a href="/posts/3" style="color: #333; text-decoration: none;">Thanks for sharing this. Very helpful for my current project.</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="post">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+        <h3 style="margin: 0;"><strong>Alice Johnson</strong></h3>
+        <span style="font-size: 0.8em; color: #666;">2024-01-14 2:45 PM</span>
+    </div>
+
+    <p style="margin: 10px 0;"><a href="/posts/4" style="color: #333; text-decoration: none;">Looking for advice on best practices for API design. Any recommendations?</a></p>
+
+    <div style="margin-top: 15px;">
+        <a href="/posts/4" class="btn" style="font-size: 0.9em;">View</a>
+        <a href="/posts/4/reply" class="btn" style="font-size: 0.9em; background-color: #28a745;">Reply</a>
+        <a href="/posts/4/edit" class="btn" style="font-size: 0.9em;">Edit</a>
+        <form style="display: inline;" method="POST" action="/posts/4/delete" onsubmit="return confirm('Are you sure you want to delete this post?')">
+            <button type="submit" class="btn btn-danger" style="font-size: 0.9em;">Delete</button>
+        </form>
+    </div>
+</div>
